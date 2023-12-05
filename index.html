@@ -13,12 +13,51 @@
           <form id="loginForm">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
-
-        <button type="submit" onclick="login()">Login</button>
     </form
+
+   <form onsubmit="return passcheck()">  
+
+     <div class="error-text">  
+
+     </div>  
+
+    <p align="center">  
+
+     <span face="'Noto Sans', sans-serif" style="font-size: 22px; font-weight: bold; margin-right: 25px;"></span>  
+
+     <input class="css-input" id="pass1" required="" type="Password">  
+
+     <input class="classname" type="submit" value="CLICK HERE!"></p>  
+
+   </form>  
+
+ <script>  
+
+     const errorText = document.querySelector(".error-text");  
+
+     var Password ="8141";  
+
+     function passcheck(){  
+
+       if (document.getElementById('pass1').value != Password) {  
+
+         errorText.style.display = "block";  
+
+         errorText.textContent = "ERROR! Password Not Match.";  
+
+         return false;  
+
+       }  
+
+       if (document.getElementById('pass1').value == Password) {  
+
+         window.open("https://vetrieditzofficial.blogspot.com/p/alight-motion-preset-256-most-beautiful.html", "_blank");  
+
+       }  
+
+     }  
+
+   </script>
     </div>
     <script src="script.js"></script>
 <p>AKP FEB EVENT 1 2 3 4 PROJECT T7 </p>
